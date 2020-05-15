@@ -1,11 +1,24 @@
 <?php
 
-function writeSecretSentence(string $txt1, string $txt2) : string
-{
-    $secretSentence = $txt1 . " s'incline face à " . $txt2;
-    return $secretSentence;
-}
+$characters = [
+    "Negan" => [
+        "city" => "The Sanctuary",
+        "weapon" => "Lucille"
+    ],
+    "Daryl" => [
+        "city" => "Alexandria",
+        "weapon" => "crossbow"
+    ],
+    "Ezekiel" => [
+        "city" => "The Kingdom",
+        "weapon" => "Shiva"
+    ],
+    "Joyeux" => [
+        "city" => "Anglet",
+        "weapon" => "Machette"
+    ]
+];
 
-    echo writeSecretSentence('Lion', 'Fire');
+var_dump($characters);
 
 ?>
